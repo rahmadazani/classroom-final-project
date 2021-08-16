@@ -18,8 +18,8 @@ export default {
       {src:"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"},
       {src:"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"},
       {src:"https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"},
-      {src:"@/assets/stisla.js"},
-      {src:"@/assets/scripts.js"},
+      {src:"/js/stisla.js"},
+      {src:"/js/scripts.js"},
     ]
   },
 

@@ -12,12 +12,15 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: "stylesheet", type: "text/css", href: "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"},
       {rel: "stylesheet", type: "text/css", href: "https://use.fontawesome.com/releases/v5.7.2/css/all.css"}
+    ],
+    script: [
+      {src:"https://code.jquery.com/jquery-3.3.1.min.js"},
+      {src:""}
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-  ],
+  css: ["@/assets/css/style.css","@/assets/css/components.css"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [

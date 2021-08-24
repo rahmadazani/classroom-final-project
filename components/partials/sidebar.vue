@@ -8,9 +8,9 @@
         <a href="index.html">St</a>
       </div>
       <ul class="sidebar-menu">
-        <li>
-          <a href="#" class="nav-link"
-            ><i class="fas fa-fire"></i><span>Dashboard</span></a
+        <li v-for="menu in menus" :key="menu">
+          <nuxt-link :to="menu.link" class="nav-link"
+            ><i :class="menu.icon"></i><span>{{ menu.name }}</span></nuxt-link
           >
         </li>
       </ul>
@@ -21,7 +21,12 @@
 export default {
   data() {
     return {
-      menu: [],
+      menus: [
+        { icon: "fas fa-home", name: "Kelas", link: "je" },
+        { icon: "fas fa-calendar-alt", name: "Kalender", link: "he" },
+        { icon: "fas fa-box", name: "Kelas yang diarsipkan", link: "ke" },
+        { icon: "fas fa-user-cog", name: "setelan", link: "le" },
+      ],
     };
   },
 };

@@ -22,10 +22,14 @@ export default {
   data() {
     return {
       menus: [
-        { icon: "fas fa-home", name: "Kelas", link: "je" },
-        { icon: "fas fa-calendar-alt", name: "Kalender", link: "he" },
-        { icon: "fas fa-box", name: "Kelas yang diarsipkan", link: "ke" },
-        { icon: "fas fa-user-cog", name: "setelan", link: "le" },
+        { icon: "fas fa-home", name: "Kelas", link: "kelas" },
+        { icon: "fas fa-calendar-alt", name: "Kalender", link: "kalender" },
+        {
+          icon: "fas fa-box",
+          name: "Kelas yang diarsipkan",
+          link: "arsip-kelas",
+        },
+        { icon: "fas fa-user-cog", name: "Setelan", link: "setelan" },
       ],
     };
   },

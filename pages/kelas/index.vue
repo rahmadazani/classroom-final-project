@@ -1,5 +1,6 @@
 <template>
   <div>
+    <elements-floating-button @click.native="addClass" />
     <div class="row">
       <div v-for="(item, i) in classes" :key="i" class="col-4">
         <card
@@ -75,6 +76,14 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    addClass() {
+      this.classes.push({
+        title: "Kelas Tambahan",
+        description: "deskripsi kelas tambahan",
+      });
+    },
   },
 };
 </script>

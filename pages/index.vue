@@ -1,5 +1,5 @@
 <template>
-<div>
-  <h1>ini PAGE index</h1>
-</div>
+  <div>
+    <h1>Halaman Depan</h1>
+  </div>
 </template>

@@ -19,12 +19,50 @@
     <button class="btn btn-warning" type="button" @click="addClass">
       Tambah Kelas
     </button>
+    <div class="card" style="height: 70vh">
+      <div class="container mt-3">
+        <input v-model="name" class="form-control" />
+        <p>Ini adalah {{ name }}</p>
+        <hr />
+        <textarea v-model="desc" class="form-control"></textarea>
+        <p style="white-space: pre-line">{{ desc }}</p>
+        <hr />
+        <select v-model="location" class="custom-select">
+          <option value="" selected disabled>Open this select menu</option>
+          <option
+            v-for="province in provinces"
+            :key="province"
+            :value="province"
+          >
+            {{ province }}
+          </option>
+        </select>
+        <p>{{ location }}</p>
+        <hr />
+        <h6>V-IF</h6>
+        <h4 v-if="location == 'Jawa Barat'">Di Jawa Barat ada Gedung Sate</h4>
+        <h4 v-else-if="location == 'Sumatera Utara'">
+          Di Sumatera Utara ada Istana Maimun
+        </h4>
+        <h6>V-SHOW</h6>
+        <h4 v-show="location == 'Jawa Barat'">Di Jawa Barat ada Gedung Sate</h4>
+        <h4 v-show="location == 'Sumatera Utara'">
+          Di Sumatera Utara ada Istana Maimun
+        </h4>
+      </div>
+    </div>
   </div>
 </template>
 <script>
+// import card from "~/components/card.vue";
 export default {
+  //  components: { card },
   data() {
     return {
+      name: "",
+      desc: "",
+      location: "",
+      provinces: ["Jawa Barat", "Sumatera Utara", "DKI Jakarta", "Papua"],
       classes: [
         {
           title: "Fullstack 4",
@@ -58,6 +96,7 @@ export default {
     updateCart(title) {
       this.listCart.push(title); //ngepush biar bisa di cetak di web
     },
+    //  methods: {
     addClass() {
       this.classes.push({
         title: "Kelas Tambahan",

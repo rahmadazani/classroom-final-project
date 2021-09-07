@@ -6,8 +6,12 @@
       <p class="card-text">{{ description }}</p>
     </div>
     <div class="card-footer">
-      <button type="button" class="btn btn-primary w-100 text-center">
-        ADD TO CART
+      <button
+        type="button"
+        class="btn btn-primary w-100 text-center"
+        @click="addToCart(title)"
+      >
+        ADD CLASS
       </button>
     </div>
   </div>
@@ -27,6 +31,11 @@ export default {
       type: String,
       default:
         "https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-logo/dd7ca8d847af8f7796144a57ba9e1106.png",
+    },
+  },
+  methods: {
+    addToCart(title) {
+      this.$emit("add-to-cart", title);
     },
   },
 };

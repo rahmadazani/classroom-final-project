@@ -22,6 +22,7 @@ export default {
   data() {
     return {
       menus: [
+        { icon: "fas fa-book", name: "Dashboard", link: "/" },
         { icon: "fas fa-home", name: "Kelas", link: "kelas" },
         { icon: "fas fa-calendar-alt", name: "Kalender", link: "kalender" },
         {

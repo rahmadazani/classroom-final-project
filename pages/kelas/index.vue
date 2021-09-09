@@ -5,7 +5,7 @@
       <li v-for="(cart, i) in listCart" :key="i">{{ cart }}</li>
     </ul>
     <hr />
-    <elements-floating-button @click.native="addClass" />
+    <elements-floating-button @join-class="joinClass" />
     <div class="row">
       <div v-for="(item, i) in classes" :key="i" class="col-4">
         <card
@@ -63,6 +63,9 @@ export default {
         title: "Kelas Tambahan",
         description: "deskripsi kelas tambahan",
       });
+    },
+    joinClass(classCode) {
+      alert("Selamat Kamu Bergabung Di" + classCode);
     },
   },
 };

@@ -43,7 +43,12 @@
             </button>
           </div>
           <div class="modal-body">
-            <input type="text" />
+            <input
+              type="text"
+              class="form-control"
+              v-model="classCode"
+              placeholder="Class Code"
+            />
           </div>
           <div class="modal-footer">
             <button
@@ -53,13 +58,29 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Join Kelas</button>
+            <button type="button" class="btn btn-primary" @click="joinClass">
+              Join Kelas
+            </button>
           </div>
         </div>
       </div>
     </div>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      classCode: "",
+    };
+  },
+  methods: {
+    joinClass() {
+      this.$emit("join-class", this.classCode);
+    },
+  },
+};
+</script>
 <style scoped>
 #floating-button {
   position: fixed;

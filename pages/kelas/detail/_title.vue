@@ -17,9 +17,7 @@
         </div>
       </template>
       <template v-slot:coming>
-        <div class="bg-info h-100">
-          <h4>HOMEWORK/ANNOUNCEMENT</h4>
-        </div>
+        <class-coming />
       </template>
     </class-detail-layout>
   </div>

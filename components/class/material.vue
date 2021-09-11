@@ -12,11 +12,12 @@
         </div>
         <div class="col-10">
           <h6>{{ materialTitle }}</h6>
-          <span>Date of Class</span>
+          <span>{{ date }}</span>
         </div>
         <div class="col-1">
           <div id="ellipsis">
-            <i class="fas fa-ellipsis-v"></i>
+            <i class="fas fa-ellipsis-v"></i> // jadiin komponen tersendiri buat
+            nambahin action dan gk duplikasi
           </div>
         </div>
       </div>
@@ -60,7 +61,7 @@ export default {
   margin-top: 12px;
 }
 #ellipsis i {
-  font-size: 2em;
+  font-size: 1.5em;
   margin-top: 12px;
 }
 </style>

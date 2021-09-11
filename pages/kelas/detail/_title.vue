@@ -22,6 +22,7 @@
 </template>
 <script>
 export default {
+  layout: "detailClass",
   data() {
     return {
       listMaterial: [

@@ -16,8 +16,9 @@
         </div>
         <div class="col-1">
           <div id="ellipsis">
-            <i class="fas fa-ellipsis-v"></i> // jadiin komponen tersendiri buat
-            nambahin action dan gk duplikasi
+            <i class="fas fa-ellipsis-v"></i>
+            <!-- jadiin komponen tersendiri buat
+            nambahin action dan gk duplikasi -->
           </div>
         </div>
       </div>

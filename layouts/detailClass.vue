@@ -1,8 +1,7 @@
 <template>
   <div id="app">
     <div class="main-wrapper">
-      <PartialsNavbar />
-      <PartialsSidebar />
+      <partials-navbar-detail />
       <div class="main-content">
         <section class="section">
           <div class="section-body"></div>

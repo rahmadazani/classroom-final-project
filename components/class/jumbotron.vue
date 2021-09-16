@@ -3,9 +3,6 @@
     <div class="container">
       <h1 class="display-4">Kelas Yang Diikuti</h1>
       <h4>Batch Kelas</h4>
-      <!-- Hapus aja-->
-      <h5>Kode Kelas</h5>
-      <h5>Link Meet</h5>
     </div>
   </div>
 </template>

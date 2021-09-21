@@ -15,10 +15,15 @@
           <span>{{ date }}</span>
         </div>
         <div class="col-1">
-          <div id="ellipsis">
-            <i class="fas fa-ellipsis-v"></i>
-            <!-- jadiin komponen tersendiri buat
-            nambahin action dan gk duplikasi -->
+          <div id="ellipsis" class="dropdown">
+            <i
+              class="fas fa-ellipsis-v"
+              id="dropdownMenuLink"
+              data-toggle="dropdown"
+            ></i>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Copy Link</a>
+            </div>
           </div>
         </div>
       </div>

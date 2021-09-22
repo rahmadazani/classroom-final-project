@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div id="floating-button" class="btn-group dropup">
+    <div id="floating-button" class="btn-group dropleft">
       <button
-        class="btn btn-primary dropdown-toggle"
+        class="btn btn-info dropdown-toggle"
         data-toggle="dropdown"
         aria-haspopup="true"
         aria-expanded="false"
@@ -87,5 +87,7 @@ export default {
   bottom: 3em;
   right: 3em;
   z-index: 10000;
+  margin-bottom: 870px;
+  margin-right: 60px;
 }
 </style>

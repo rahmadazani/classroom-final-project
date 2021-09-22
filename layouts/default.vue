@@ -5,11 +5,7 @@
       <PartialsSidebar />
       <div class="main-content">
         <section class="section">
-          <div class="section-header">
-            <h1>INI PAGE DEFAULT GAES</h1>
-          </div>
-
-          <div class="section-body"></div>
+          <div class="section-body" id="body"></div>
           <Nuxt />
         </section>
       </div>
@@ -17,3 +13,8 @@
     </div>
   </div>
 </template>
+<style scoped>
+#body {
+  margin-bottom: 60px;
+}
+</style>
